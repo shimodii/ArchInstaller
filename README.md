@@ -9,11 +9,9 @@ or you can make other partions for swap,... and after installtion fixed them
 
 # how to go
 just install git then:<br>
-<code>
-  1. git clone https://github.com/am-shm/ArchInstaller.git<br>
-  2. chmod +x archinstaller.sh<br>
-  3. ./archinstaller.sh
-</code>
+<code>1. git clone https://github.com/am-shm/ArchInstaller.git</code><br>
+<code>2. chmod +x archinstaller.sh</code><br>
+<code>3. ./archinstaller.sh</code>
 <br><br>
 
 # last punch
