@@ -1,24 +1,27 @@
 # ArchInstaller
 a small script to install arch linux 
 
-# about
-for full automate install you should partion your disk to one part (/dev/sda1), then run the script to install arch linux on this partition<br>
-if you use more yhan one hard disk you can partion your disk and then edit the script just like that you want<br>
-<br>
-or you can make other partions for swap,... and after installtion fixed them 
-
-# how to go
+# How to go
 we have 2 scripts that you can run them depend on your system<br>
-these scripts :
-*install arch linux
-*install bootloader
-*install vi & vim TE
-*configure locale
-*configure hostname and hosts
-*make user and config that for sudo
+and just partition your disk then run the script like this:<br>
+<code>1- pacman -Sy git</code><br>
+<code>2- git clone https://github.com/am-shm/ArchInstaller.git</code><br>
+<code>3- cd ArchInstaller</code><br>
+<code>4- bash bios-install.sh</code><br>
+or<br>
+<code>4- bash efi-install.sh</code><br>
+<b>these scripts :</b><br>
+*install arch linux<br>
+*install bootloader<br>
+*install vi & vim TE<br>
+*configure locale<br>
+*configure hostname and hosts<br>
+*make user and config that for sudo<br>
 
-# last punch
-in the end of installtion you should enter the root password and retype it and script will reboot your machine
+# Good to read
+it's good to read <a href="https://github.com/am-shm/ArchInstaller/tree/main/about">here</a> !
+# Done
+in the end you will see [press any key to reboot!] message and when you press any key system will reboot to your grub bootloader!
 <br><br>
 made with 💙
 <br>
