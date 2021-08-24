@@ -10,7 +10,7 @@ It is distinct from the commonly used "MBR boot code" method followed for BIOS s
 
 # Arch boot process
 In order to boot Arch Linux, a Linux-capable boot loader must be set up. The boot loader is responsible for loading the kernel and initial ramdisk before initiating the boot process. The procedure is quite different for BIOS and UEFI systems.<br>
-<h3>System initialization Under BIOS:</h3><br>
+<h3>-System initialization Under BIOS:</h3><br>
 1-System switched on, the power-on self-test (POST) is executed.<br>
 2-After POST, BIOS initializes the hardware required for booting (disk, keyboard controllers etc.).<br>
 3-BIOS launches the first 440 bytes (the Master Boot Record bootstrap code area) of the first disk in the BIOS disk order.<br>
@@ -18,7 +18,7 @@ In order to boot Arch Linux, a Linux-capable boot loader must be set up. The boo
 5-The actual boot loader is launched.<br>
 6-The boot loader then loads an operating system by either chain-loading or directly loading the operating system kernel.<br><br>
 
-<h3>System initialization Under UEFI:</h3><br>
+<h3>-System initialization Under UEFI:</h3><br>
 1-System switched on, the power-on self-test (POST) is executed.<br>
 2-After POST, UEFI initializes the hardware required for booting (disk, keyboard controllers etc.).<br>
 3-Firmware reads the boot entries in the NVRAM to determine which EFI application to launch and from where (e.g. from which disk and partition).<br>
