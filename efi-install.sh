@@ -42,7 +42,7 @@ mk.fat -F32 $EFIPART
 mount $ROOT /mnt
 
 #install linux base
-pacstrap /mnt base base-devel linux linux-firmware vim
+pacstrap /mnt base base-devel linux linux-firmware vim vi
 
 #generate fstab
 genfstab /mnt > /mnt/etc/fstab
@@ -75,4 +75,25 @@ grub-install --target=x86_64-efi --bootloader-id=ARCH --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg
 
 #set root password
+clear
+echo "set root password"
 passwd
+
+#make user
+printf "enter you username: "
+read USERNAME
+useradd -m $USERNAME
+usermod -a -G wheel $USERNAME
+echo "set password for user"
+passwd $USERNAME
+
+#edit sudoers file
+clear
+echo "now uncomment the line include %wheel ALL=(ALL) then :wq"
+printf "[press any key to continue]"
+read KEY
+visudo
+
+#done
+clear
+echo "Done !"
