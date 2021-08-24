@@ -97,3 +97,6 @@ visudo
 #done
 clear
 echo "Done !"
+printf "[press any key to reboot!]"
+read K
+reboot
