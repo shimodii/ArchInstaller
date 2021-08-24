@@ -1,4 +1,5 @@
 mfs.xfs /dev/sda1
+mkswap /dev/sda2
 mount /dev/sda1 /mnt
 pacstrap /mnt base base-devel linux
 genfstab /mnt>/mnt/etc/fstab
