@@ -8,11 +8,14 @@ if you use more yhan one hard disk you can partion your disk and then edit the s
 or you can make other partions for swap,... and after installtion fixed them 
 
 # how to go
-just install git then:<br>
-<code>1. git clone https://github.com/am-shm/ArchInstaller.git</code><br>
-<code>2. chmod +x archinstaller.sh</code><br>
-<code>3. ./archinstaller.sh</code>
-<br><br>
+we have 2 scripts that you can run them depend on your system<br>
+these scripts :
+*install arch linux
+*install bootloader
+*install vi & vim TE
+*configure locale
+*configure hostname and hosts
+*make user and config that for sudo
 
 # last punch
 in the end of installtion you should enter the root password and retype it and script will reboot your machine
