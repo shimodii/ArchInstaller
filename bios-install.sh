@@ -24,52 +24,37 @@ pacstrap /mnt base base-devel linux vim vi
 genfstab /mnt>/mnt/etc/fstab
 
 #### chroot & config installed arch ####
-arch-chroot /mnt
+arch-chroot /mnt bash -c 'mv /etc/locale.gen /etc/locale.gen.old;touch /etc/locale.gen;echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;locale-gen;echo "arch" > /etc/hostname;touch /etc/hosts;echo "127.0.0.1 	localhost" >> /etc/hosts;echo "::1 		localhost" >> /etc/hosts;echo "::1 		localhost" >> /etc/hosts;echo "127.0.1.1 	     arch" >> /etc/hosts;pacman -S networkmanager;systemctl enable NetworkManager;pacman -Sy grub;grub-install /dev/sda;grub-mkconfig -o /boot/grub/grub.cfg;pacman -S konsole;clear;echo "set root password";passwd;clear;'
 
-#config locale
-mv /etc/locale.gen /etc/locale.gen.old
-touch /etc/locale.gen
-echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
-locale-gen
+# config locale
+# mv /etc/locale.gen /etc/locale.gen.old
+# touch /etc/locale.gen
+# echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+# locale-gen
 
 #config hostname and hosts
-echo "arch" > /etc/hostname
-touch /etc/hosts
-echo "127.0.0.1 	localhost" >> /etc/hosts
-echo "::1 		localhost" >> /etc/hosts
-echo "127.0.1.1 	     arch" >> /etc/hosts
+# echo "arch" > /etc/hostname
+# touch /etc/hosts
+# echo "127.0.0.1 	localhost" >> /etc/hosts
+# echo "::1 		localhost" >> /etc/hosts
+# echo "127.0.1.1 	     arch" >> /etc/hosts
 
 #install and start networkmanager service
-pacman -S networkmanager
-systemctl start NetworkManager
+# pacman -S networkmanager
+# systemctl enable NetworkManager
 
 #install and configuration bootloader
-pacman -Sy grub
-grub-install /dev/sda
-grub-mkconfig -o /boot/grub/grub.cfg
+# pacman -Sy grub
+# grub-install /dev/sda
+# grub-mkconfig -o /boot/grub/grub.cfg
 
 #install konsole as terminal
-pacman -S konsole
+# pacman -S konsole
 
 #set root password
-clear
-echo "set root password"
-passwd
-
-#make user
-printf "enter you username: "
-read USERNAME
-useradd -m $USERNAME
-usermod -a -G wheel $USERNAME
-echo "set password for user"
-passwd $USERNAME
-
-#edit sudoers file
-clear
-echo "now uncomment the line include %wheel ALL=(ALL) then :wq"
-printf "[press any key to continue]"
-read KEY
-visudo
+# clear
+# echo "set root password"
+# passwd
 
 #done
 clear
