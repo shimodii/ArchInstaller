@@ -74,6 +74,9 @@ mount $EFIPART /boot/efi
 grub-install --target=x86_64-efi --bootloader-id=ARCH --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg
 
+#install konsole as terminal
+pacman -S konsole
+
 #set root password
 clear
 echo "set root password"
