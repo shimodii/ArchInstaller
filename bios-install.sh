@@ -48,6 +48,9 @@ pacman -Sy grub
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
+#install konsole as terminal
+pacman -S konsole
+
 #set root password
 clear
 echo "set root password"
