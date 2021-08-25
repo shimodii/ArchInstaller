@@ -11,12 +11,12 @@ and just partition your disk then run the script like this:<br>
 or<br>
 <code>4- bash efi-install.sh</code><br>
 <b>these scripts :</b><br>
-     *install arch linux<br>
-     *install bootloader<br>
-     *install vi & vim TE<br>
-     *configure locale<br>
-     *configure hostname and hosts<br>
-     *make user and config that for sudo<br>
+     * install arch linux<br>
+     * install bootloader<br>
+     * install vi & vim TE<br>
+     * configure locale<br>
+     * configure hostname and hosts<br>
+     * make user and config that for sudo<br>
 
 # Desktop installtion
 after you finished arch installtion you can run one of that scripts (installgnome.sh/install-xfce.sh/install-kde.sh) to install desktop environment for arch linux.<br>
