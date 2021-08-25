@@ -22,7 +22,8 @@ or<br>
 after you finished arch installtion you can run one of that scripts (installgnome.sh/install-xfce.sh/install-kde.sh) to install desktop environment for arch linux.<br>
 and if you install one of them and want to test the others you can run:<br>
 <code>head -1 -DE YOU WANT- | bash</code><br>
-and reboot system and choose DE you want from DM
+and reboot system and choose DE you want from DM<br>
+you also can watch <a href="https://github.com/am-shm/minimal-desktop-configuration">here</a> for i3 configuration.
 
 # Good to read
 it's good to read <a href="https://github.com/am-shm/ArchInstaller/tree/main/about">here</a> !
