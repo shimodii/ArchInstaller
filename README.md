@@ -6,14 +6,13 @@ we have 2 scripts that you can run them depend on your system<br>
 and just partition your disk then run the script like this:<br>
 
 
-    1- pacman -Sy git<br>
-    2- git clone https://github.com/am-shm/ArchInstaller.git<br>
-    3- cd ArchInstaller<br>
-    4- bash bios-install.sh<br>
-
-
-or<br>
-<code>4- bash efi-install.sh</code><br>
+    1- pacman -Sy git
+    2- git clone https://github.com/am-shm/ArchInstaller.git
+    3- cd ArchInstaller
+    4- bash bios-install.sh
+    or
+    4- bash efi-install.sh
+    
 <b>these scripts</b><br>
      * install arch linux<br>
      * install bootloader<br>
