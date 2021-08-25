@@ -10,7 +10,8 @@ and just partition your disk then run the script like this:<br>
 <code>4- bash bios-install.sh</code><br>
 or<br>
 <code>4- bash efi-install.sh</code><br>
-<b>these scripts :</b><br>
+<b>these scripts</b><br>
+
      * install arch linux<br>
      * install bootloader<br>
      * install vi & vim TE<br>
