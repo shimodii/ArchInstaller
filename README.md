@@ -23,7 +23,10 @@ after you finished arch installtion you can run one of that scripts (installgnom
 and if you install one of them and want to test the others you can run:<br>
 <code>head -1 -DE YOU WANT- | bash</code><br>
 and reboot system and choose DE you want from DM<br>
-you also can watch <a href="https://github.com/am-shm/minimal-desktop-configuration">here</a> for i3 configuration.
+you also can watch <a href="https://github.com/am-shm/minimal-desktop-configuration">here</a> for i3 configuration.<br>
+<center>
+    <img src="https://github.com/am-shm/ArchInstaller/blob/main/image_2021-08-25_17-25-52.png">
+</center>
 
 # Good to read
 it's good to read <a href="https://github.com/am-shm/ArchInstaller/tree/main/about">here</a> !
