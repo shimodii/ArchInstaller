@@ -17,7 +17,7 @@ and just partition your disk then run the script like this:<br>
      * install arch linux<br>
      * install bootloader<br>
      * install vi & vim TE<br>
-     * install konsole as terminal
+     * install konsole as terminal<br>
      * configure locale<br>
      * configure hostname and hosts<br>
      * make user and config that for sudo<br>
