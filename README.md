@@ -20,7 +20,15 @@ and just partition your disk then run the script like this:<br>
      * install konsole as terminal<br>
      * configure locale<br>
      * configure hostname and hosts<br>
-     * make user and config that for sudo<br>
+     * install and enable networkmanager<br>
+
+# Make user
+after the installtion finished you can run user.sh to make user
+
+    git clone https://github.com/am-shm/ArchInstaller.git
+    cd ArchInstaller
+    chmod +x user.sh
+    ./user.sh
 
 # Desktop installtion
 after you finished arch installtion you can run one of that scripts (installgnome.sh/install-xfce.sh/install-kde.sh) to install desktop environment for arch linux.<br>
