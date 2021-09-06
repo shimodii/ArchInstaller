@@ -24,6 +24,8 @@ In order to boot Arch Linux, a Linux-capable boot loader must be set up. The boo
 3-Firmware reads the boot entries in the NVRAM to determine which EFI application to launch and from where (e.g. from which disk and partition).<br>
 4-Firmware launches the EFI application. (This could be a boot loader or the Arch kernel itself using EFISTUB OR could be some other EFI application such as a UEFI shell or a boot manager like systemd-boot or rEFInd)<br>
 <b>If Secure Boot is enabled, the boot process will verify authenticity of the EFI binary by signature. </b><br>
+and you can see difference beteween UEFI/EFI $ BIOS<br?
+<img src="https://github.com/am-shm/ArchInstaller/blob/main/about/photo_2021-09-06_14-54-53.jpg">
 
 # What is fstab
 The fstab file can be used to define how disk partitions, various other block devices, or remote filesystems should be mounted into the filesystem.<br>
