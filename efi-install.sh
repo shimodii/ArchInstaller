@@ -37,7 +37,7 @@ mkfs.ext4 /dev/sda1
 mkswap /dev/sda2
 
 #efi partition
-mk.fat -F32 /dev/sda3
+mkfs.fat -F32 /dev/sda3
 
 #mount root to /mnt
 mount /dev/sda1 /mnt
